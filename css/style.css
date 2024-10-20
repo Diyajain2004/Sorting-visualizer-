@@ -1,0 +1,181 @@
+/* General body styling */
+body {
+    background-color: #f4e4e4; /* Same background color */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: center; /* Aligns title to the center */
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Add padding for spacing */
+    padding-bottom: 40px;
+    background-color: #f4e4e4; /* Same background color */
+    height: 60px; /* Fixed height for the header */
+    font-style: italic;
+}
+
+.styled-image {
+    position: fixed; /* Fix the position relative to the viewport */
+    right: -10px; /* Adjusts the distance from the right side */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    width: 100%; /* Adjusts the image to full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 700px; /* Limits the maximum width */
+    border-radius: 10px; /* Rounds the corners */
+    display: block; /* Ensures it behaves as a block element */
+    margin: 0; /* Remove horizontal margins since it's fixed */
+    z-index: 10; /* Ensure it stays below the container */
+}
+
+/* Title styling */
+.title {
+    font-size: 40px;
+    color: #e43f5a;
+}
+
+/* Sorting container styling */
+/* Number block container styling */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping into multiple rows */
+    justify-content: flex-start; /* Align blocks to the left */
+    align-items: flex-start; /* Align blocks to the top */
+    margin: 20px;
+    gap: 10px; /* Adds space between number blocks */
+    height: 350px; /* Fixed height for the scrolling area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding-top: 10px; /* Add padding to the top for better visibility */
+}
+
+/* Number block styling */
+.number-block {
+    background-color: #e43f5a;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 50px; /* Width of the number block */
+    height: 50px; /* Height of the number block */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect the width/height */
+    margin-top: 20px; /* Adjust this value as needed */
+
+}
+
+/* Number block styling */
+.flex-item {
+    background-color: #e43f5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Graph container styling */
+.graph-container {
+    width: 50%; /* Full width */
+    height: 350px; /* Adjust the height as needed */
+    margin: 0 50px; /* Set top and bottom margins to 0, keeping side margins */
+    display: flex;
+    justify-content: flex-start; /* Align bars to the left */
+    align-items: flex-end; /* Align bars to the bottom of the container */
+    background-color: #f4e4e4; /* Same background color */
+    position: relative; /* Allow absolute positioning for bars */
+    overflow: hidden; /* Ensure bars do not exceed this area */
+}
+
+/* Input panel styling */
+#input-panel {
+    display: flex;
+    justify-content: flex-start; /* Align input elements to the left */
+    margin: 20px 50px;
+    font-size: 18px;
+    color: #000;
+}
+
+.label {
+    margin: 0 15px;
+}
+
+/* Range input styling */
+input[type="range"] {
+    width: 200px;
+    appearance: none;
+    height: 4px;
+    background-color: #e43f5a;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #e43f5a;
+    border-radius: 50%;
+}
+
+/* Button group styling */
+.button-group {
+    text-align: left; /* Align buttons to the left */
+    margin: 20px 300px;
+}
+
+.new-btn,
+.stop-btn,
+.sort-btn {
+    background-color: #e43f5a;
+    border: none;
+    padding: 12px 25px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-btn:hover,
+.stop-btn:hover,
+.sort-btn:hover {
+    background-color: #aeeaf0;
+}
+
+/* Control panel styling */
+.control-panel {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.sort-btn {
+    width: 120px; /* Reduce the width of the button */
+    margin: 10px;
+    background-color: #1b1b2f;
+    border: 2px solid #e43f5a;
+    color: white;
+    padding: 8px 15px; /* Reduce padding for smaller buttons */
+    font-size: 14px; /* Reduce font size */
+}
+
+.sort-btn:hover {
+    background-color: #e43f5a;
+}
