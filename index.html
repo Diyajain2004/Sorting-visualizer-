@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sorting Visualizer</title>
+    <meta name="description" content="Sorting Visualizer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+    <img src="CSS/img.png" alt="Description of Image" class="styled-image">
+    <header>
+        <h1 class="title">Sorting Visualizer</h1>
+    </header>
+
+    <main>
+        <div id="graph-container" class="graph-container"> <!-- New graph container -->
+            <div id="sorting" class="flex-container">
+            </div>
+        </div>
+        <div id="input-panel">
+            <label for="size_input" class="label">Array Size:
+                <input id="size_input" type="range" value="50" min="1" max="100" />
+            </label>
+            <label for="speed_input" class="label">Animation Speed:
+                <input id="speed_input" type="range" min="20" max="300" value="60" />
+            </label>
+        </div>
+
+        <div class="button-group">
+            <button class="new-btn">New Array</button>
+            <button class="stop-btn" disabled style="color: black;">Stop Sorting</button>
+        </div>
+
+        <div class="control-panel">
+            <button class="btn sort-btn" id="bubbleSort">Bubble Sort</button>
+            <button class="btn sort-btn" id="selectionSort">Selection Sort</button>
+            <button class="btn sort-btn" id="insertionSort">Insertion Sort</button>
+            <button class="btn sort-btn" id="mergeSort">Merge Sort</button>
+            <button class="btn sort-btn" id="quickSort">Quick Sort</button>
+            <button class="btn sort-btn" id="heapSort">Heap Sort</button>
+        </div>
+    </main>
+
+    <!-- Add these script tags for your sorting algorithms and main script -->
+    <script src="sorting.js" defer></script>
+    <script src="algorithms/bubbleSort.js" defer></script>
+    <script src="algorithms/mergeSort.js" defer></script>
+    <script src="algorithms/selectionSort.js" defer></script>
+    <script src="algorithms/quickSort.js" defer></script>
+    <script src="algorithms/insertionSort.js" defer></script>
+    <script src="algorithms/heapSort.js" defer></script>
+</body>
+
+</html>
